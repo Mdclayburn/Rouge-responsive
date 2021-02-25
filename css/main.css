@@ -171,7 +171,7 @@ footer span {
 	font-size: 1.1428em; /*14px fontsize*/
 }
 @media(max-width: 601px) {
-	.body {
+	.container {
 		max-width: 100%;
 		justify-content: center;
 		align-items: center;
