@@ -4,7 +4,7 @@ html {
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	font-size: 1rem;
+	font-size: 1em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,13 +28,16 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 1.875em; /*30px fontsize*/
+	/*30px fontsize*/
+	font-size: 1.875em;
 }
+
 h2 {
 	font-size: 1.125em;/*18px fontsize*/
 }
+
 h3 {
-	font-size: 1.333em;/*12px fontsize*/
+	font-size: 0.75em;/*12px fontsize*/
 }
 
 p {
@@ -45,35 +48,38 @@ p {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-direction:column;
 }
 
 header h1 {
+	border-bottom: 3px solid #77a466;
 	margin: 0;
 	padding: 38px 0;
+	display: flex;
+	align-items:center;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 0.5em;
 }
 header nav ul {
 	margin: 0;
-	padding: 0;
+	padding: 0.2em;
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.1428em; /*14px fontsize*/
-	padding: 0 10px;
-	display: inline;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -85,9 +91,9 @@ header nav ul li a{
 .bottom-section {
 	margin: 0 auto;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-direction: column;
 }
 
 .main-image {
@@ -95,7 +101,8 @@ header nav ul li a{
 }
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	margin: 0.5em;
+	border: 3px solid #77a466;
 }
 
 .main-title {
@@ -103,11 +110,11 @@ header nav ul li a{
 }
 .main-title h2 {
 	text-align: left;
-	padding: 5px 0;
+	padding: 1em;
 	color: #77a466;
 }
 .main-title p {
-	padding: 0;
+	padding: 1em;
 	font-size: 1em; /*16px fontsize*/
 	line-height: 25px;
 }
@@ -115,13 +122,13 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
 
 .section-one h3 {
-	padding: 10px 0;
+	padding: 10px 30px;
 }
 
 .section-two {
@@ -136,21 +143,21 @@ header nav ul li a{
 
 .menu {
 	list-style: none;
-	padding: 0;
+	padding: 1em;
 }
 .menu li {
-	padding: 10px 0;
 	color:#77a466;
+	padding: 0.5em;
 }
 
 .reviews {
 	color: #333;
-	font-size: 1rem; /*16px fontsize*/
+	font-size: 1em; /*16px fontsize*/
 	line-height: 21px;
 }
 
 .address {
-	font-size: 1rem; /*16px fontsize*/
+	font-size: 1em; /*16px fontsize*/
 	line-height: 24px;
 }
 
@@ -169,13 +176,4 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 1.1428em; /*14px fontsize*/
-}
-@media(max-width: 601px) {
-	.container {
-		max-width: 100%;
-		justify-content: center;
-		align-items: center;
-		flex-flow: row wrap;
-	}
-
 }
